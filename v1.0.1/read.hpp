@@ -15,7 +15,7 @@ inline int read_board(std::string sfen_board, char *board){
     };
     for(j = 0;j < n;j++){
         if(sfen_board[j] == 'P'){
-            board[i] = B_PAWN;
+            board[i] += B_PAWN;
             i++;
         }else if(sfen_board[j] == 'L'){
             board[i] += B_LANCE;
